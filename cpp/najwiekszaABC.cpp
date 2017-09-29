@@ -24,6 +24,7 @@ int main(int argc, char **argv)
      {
          if (b > c)
                 cout << "Największe b" << b; 
+                
      }
      
     return 0;
