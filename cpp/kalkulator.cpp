@@ -11,20 +11,30 @@ using namespace std;
 int main(int argc, char **argv)
 {  char znak; 
     int a , b ;
-    a = b
-    cout << "Podaj znak " ;
+    
+    cout << "Podaj znak " << endl;
     cin >> znak ;
     
-    cout << "Podaj dwie liczby " << a b ;
+    cout << "Podaj dwie liczby " ;
     cin >> a >> b;
 
      // + ,- , *, /
     if (znak == '+')
     { cout << "Suma" << a+ b ;
+    }
+        else  if (znak == '-')
+    { cout << "Różnica" << a - b ;
+    }
+        else if (znak == '/')
+    { cout << "Iloraz" << a /b ;
+    }
+        else if (znak == '*')
+    { cout << "Iloczyn" << a * b ;
+    }
         
         
 
-}
+
     return 0;
 }
 
