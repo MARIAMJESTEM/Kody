@@ -11,18 +11,17 @@ int main(int argc, char **argv)
 
 {
 	int liczba = 0 ;
-	 cout <<"Podaj liczbę :  "<< ;
-	  cin>> liczba ;
-	 while (true)
+	while (true)
 	 {
-	 if (liczba % liczba = 0 && liczba > 0);
-	 {
-		 cout << "Kwadrat liczby : " << liczba *liczba << endl ;
-	     cout << "Pierwiastek liczby :  "<< sqrt (liczba)<< break<< endl;
-	 }
+		 cout << "Podaj liczbę :  "<< endl;
+		 cin>> liczba;
+		 if (liczba % liczba == 0 && liczba >0)
+		 cout<< "Kwadrat liczby :  "<<liczba * liczba << endl;
+		 cout <<  "Pierwiastek liczby:  "<< sqrt( liczba) << endl;
+		 break;
+		} 
  
-	}	
-
-	return 0;
+	
+return 0;
 }
 
