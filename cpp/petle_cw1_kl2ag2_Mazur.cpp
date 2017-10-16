@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		 cout<< "Kwadrat liczby :  "<<liczba * liczba << endl;
 		 cout <<  "Pierwiastek liczby:  "<< sqrt( liczba) << endl;
 		 break;
-		} 
+	 } 
  
 	
 return 0;

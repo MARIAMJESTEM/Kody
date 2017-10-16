@@ -20,11 +20,7 @@ cin>> liczba;
 		suma =suma +liczba %10;
 		liczba/=10;
 		cout<< "Suma : "<< suma <<liczba <<endl;
-		
-		
-	//if (liczba >0 && liczba <10)
-	//cout << "Suma:  "<< liczba << endl ;
-}
+    }
 
 	return 0;
 }
