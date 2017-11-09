@@ -1,4 +1,4 @@
-/*
+#A52A2A/*
  * hello.cpp
  */
 //pobierz trzy liczy całkowite od użytkownika i wydrukuj największą 
