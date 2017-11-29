@@ -29,9 +29,11 @@ def fib_iter(n):
 
 def fib_iter2(n):
     a, b = (0, 1)
-
-    while
-        pass
+    print(a)
+    while n > 0:
+        a, b = b, a + b
+        print(a, " ", b, "Iloraz", b / a)
+        n = n - 1
 
 
 def main(args):
