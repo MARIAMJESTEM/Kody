@@ -1,29 +1,36 @@
 /*
- * beznazwye.cpp
- */
+* fibonacci.cpp
+*/
 
 
 #include <iostream>
-
+ 
 using namespace std;
+ 
 int fib_iter(int n)
-{ 
+{
+	if ( n == 0)
+        return 0;
+    else if ( n == 1)
+        return 1;
     int a = 0;
     int b = 1;
-    if (n == 0 )
-    {
-        cout << 0;
-        return 0;
+    int tmp;
+    cout << a << endl;
+    for (int i = 1 ; i < n; i++) 
+    {   tmp = b;
+        b = a + b;
+        a = tmp;
     }
-    cout << a;
-    for (int i = 2; i < n ; i++)
-    
-    
-    
+    cout << a << " " << b << " " << b / a << endl;
+    return b;
 }
+ 
 int main(int argc, char **argv)
 {
-	
-	return 0;
+    int n;
+    cout << "Numer wyrazu ciągu: " << endl;
+    cin >> n;
+    printf("Wyraz %d = %d", n, fib_iter(n));    
+    return 0;
 }
-
