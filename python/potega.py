@@ -13,6 +13,15 @@ def potega_it(podst, wykladnik):
         wynik = wynik * podst
     return wynik
 
+# a0 = 1 - warunek brzegowy
+# dla n > 0 : an= a(n-1) * a
+
+
+def potega_rek(podst, wyk):
+    if wyk == 0:
+        return 1
+    return potega_rek(podst, wyk - 1) * podst
+
 
 def main(args):
 
@@ -24,6 +33,7 @@ def main(args):
     assert potega_it(100, 0) == 1
     assert potega_it(100, 1) == 100
     assert potega_it(2, 3) == 8
+    assert potega_rek(2, 3) == 8
 
     # print("Potęga: ", potega_it(a, n))
 
