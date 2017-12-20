@@ -1,11 +1,10 @@
+/*
+ * sort_bubble.cpp
+ */
 
-
-#include <iostream>
-#include <windows.h>
-#include <time.h>
-
- 
 using namespace std;
+#include <iostream>
+
  
 void wypelnij(int t[], int n, int m)
 {
@@ -26,34 +25,29 @@ void drukuj(int t[], int n)
      }
     cout<<endl;
 }
+
  
- 
-void zamien(int &a, int &b)
+void zamien(int &a, int &b) //zmienne są przekazywane przez wartość a nie kopie żeby zamienić później elementy / & przez referencje/ bez & przez kopie 
 {
      int tmp = a;
      a = b;
      b = tmp;
 }
- 
- 
-void sort_wyb(int t[], int n)
+
+void sort_babel(int t[], int n)
 {
-     int k;
-     for (int i = 0; i < n; i++)
-     {
-         k = i;
-         for (int j = i + 1; j < n; j++)
-         {
-             if (t[j] < t[k])
-             {
-                 k = j;
-             }
-         }
-         zamien(t[i], t[k]);
+    for (int i = 0; i < n; i++)
+    {
+            for (int j = i +1; j < n - i ; j++)
+            // for (int j = 0;)
+            {
+                    if (t[j-1] > t[j])
+                    // if (t[j] > t[j+1])
+            }
     }
+    
 }
- 
- 
+
 int main(int argc, char **argv)
 {
 	const int ile = 10;
@@ -61,7 +55,8 @@ int main(int argc, char **argv)
     wypelnij(tab, ile, 20);
     drukuj(tab, ile);
     
-    sort_wyb(tab,ile);
+    sort_babel(tab,ile);
     drukuj(tab,ile);
- 	return 0;
- }
+	return 0;
+}
+
