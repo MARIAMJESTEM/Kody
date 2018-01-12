@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-12T11:13:47+01:00
+
+====== Własności ======
+Created piątek 12 styczeń 2018
+
+1. Poprawność
+2. Skończoność
+3. Złożoność
+4. Efektywność
+
+
+
+__1.POPRAWNOŚĆ__
+* w poprawności algorytmów trzeba uważać na błędy logiczne 
+
+**Specyfikacja problemu** - określenie danych początkowych oraz celu 
+jest możliwe, że algorytm jest częściowo poprawny (bo algorytm może byc poprawny dla nieskończenie wielu danych ) 
+
+**Wnioskowanie indukcyjne** - (!= dedukcyjne )- wnioskowanie z pojedynczyk obserwacji w celu uogólnienia 
+dedukcja - postępuje odwrotnie do powyższego , znając prawo ogólne wyprowadzamy szczegółowe przypadki 
+indukcja - jest metodą dowodzenia czegoś  a w zasadzie wyprowadzenia wniosków
