@@ -21,3 +21,5 @@ jest możliwe, że algorytm jest częściowo poprawny (bo algorytm może byc pop
 **Wnioskowanie indukcyjne** - (!= dedukcyjne )- wnioskowanie z pojedynczyk obserwacji w celu uogólnienia 
 dedukcja - postępuje odwrotnie do powyższego , znając prawo ogólne wyprowadzamy szczegółowe przypadki 
 indukcja - jest metodą dowodzenia czegoś  a w zasadzie wyprowadzenia wniosków
+ ZŁOŻONOŚĆ pamieciowa -ile razy wykona się algorytm w zależności od ilości danych 
+złożoność pamięciowa -  
