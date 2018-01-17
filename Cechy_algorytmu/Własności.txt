@@ -22,4 +22,5 @@ jest możliwe, że algorytm jest częściowo poprawny (bo algorytm może byc pop
 dedukcja - postępuje odwrotnie do powyższego , znając prawo ogólne wyprowadzamy szczegółowe przypadki 
 indukcja - jest metodą dowodzenia czegoś  a w zasadzie wyprowadzenia wniosków
  ZŁOŻONOŚĆ pamieciowa -ile razy wykona się algorytm w zależności od ilości danych 
-złożoność pamięciowa -  
+złożoność pamięciowa - "ile pamięci potrzebuje algorytm aby zakończył swoje działanie " 
+efektywność algorytmu- zależy od typu danych którymi on operuje 
