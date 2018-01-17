@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-17T12:01:20+01:00
+
+====== Systemy numeracyjne ======
+Created środa 17 styczeń 2018
+
+MMXVIII - 2018 
+MDXXX
+MCCCLXIV
+SYSTEM O PODSTAWIE 6 
+234(6)= 2*6^2 + 3*6 ^1 + 4*6^0= 72 + 18 +4 = 
+234 (4)= "NIE MOŻE BYĆ TAKIEJ LICZBY PO PODSTAWA NIGDY NIE MOŻE BYĆ CYFRĄ W DANYM SYSTEMIE "
+234(5)= 2*5^2 + 3*5^1+ 4*5^0= 50 + 15 +4= 69
+binarnie
+1010_{2}(2)= 1*2^3+0+1*2^1+0=10_{10}
+1001(2)= 1*2^3 +0+0+1*2^0 =9(10)
+kolejne potęgi liczby 2 
+128, 64, 32, 16, 8, 4, 2, 1
+1111_{2 }8+4+2+1=15
+1001_{2 }8+1=9
+10010011_{2}=128+16+2+1= 147_{10}
+SYSTEM O PODSTAWIE 16 
+110
+0-9
+10A
+11B
+12C
+13D
+14E
+15F
+FF= F*16^1+ 15 * 16^0=255
+111111111_{2}= 255_{10}= FF_{16}
+System o podstawie 8 
+0-7
+644_{8}= 6*8^2+ 4*8^1 +4*8^0= 420
+
+
