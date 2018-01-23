@@ -1,10 +1,9 @@
 /*
- * parzystemoje.cpp
+ * Mazur_alg1.cpp
  */
-
+// myśle że algorytm jest poprawny chcoicaz to pytanie może być podchwytliwe
 using namespace std;
 #include <iostream>
-
 int main(int argc, char **argv)
 {
 	int a=0;
@@ -17,17 +16,16 @@ int main(int argc, char **argv)
 	
 	while(a!=i)
     {
-        if(i>a)
+        if(i==100)
         {
             cout <<"Liczba jest nieparzysta :(";
-           break;
+            break;
         }
         i= i+2;
     }
-    if(a==i)
-    {
-        cout <<"Liczba jest parzysta :)";
-    }
+   if (a==i)
+   {
+        cout << "Liczba jest parzysta :)";
+   }
 	return 0;
 }
-
