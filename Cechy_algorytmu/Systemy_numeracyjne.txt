@@ -35,4 +35,37 @@ System o podstawie 8
 0-7
 644_{8}= 6*8^2+ 4*8^1 +4*8^0= 420
 
+KONWERSJA LICZBY DZIESIĘTNEJ
+dec2bin 129(10)->10000001(2) ->1*2^7 +1= 129
+129/ 2= 64 reszty 1 
+64/2= 32 reszty 0
+32/2=16 reszty 0
+16/2=8 reszty 0 
+8/2= 4 reszty 0
+4/2 = 2 reszty 0
+2/2 = 1 reszty 0 
+1/ 2= 0 reszty 1
+
+ćw. 174(10)->10101110(2)-> 128+32+8+4+2= 174
+174/2= 87 reszty 0
+87/2= 43 reszty 1
+43/ 2= 21 reszty 1 
+21/2= 10 reszty 1
+10/ 2-= 5 reszty 0
+5/2= 2 reszty 1
+2/2= 1 reszty 0
+1/2= 0 reszty 1
+
+
+10101110
+ 174(10) = 174-128=46
+46-32=14
+14-8=6
+6-4=2
+2-2=0
+
+174(10)-> 256(8)=2*64+ 5*8 + 6
+178/8= 21 reszty 6
+21/8= 2 reszta 5
+2/8= reszta 2
 
