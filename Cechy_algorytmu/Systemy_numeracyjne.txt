@@ -68,4 +68,5 @@ dec2bin 129(10)->10000001(2) ->1*2^7 +1= 129
 178/8= 21 reszty 6
 21/8= 2 reszta 5
 2/8= reszta 2
+SYSTEM 16-TKOWY jak jest 0x to wtedy wiadomo że system 16-tkowy
 
