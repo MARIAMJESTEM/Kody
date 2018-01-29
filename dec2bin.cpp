@@ -7,16 +7,16 @@ using namespace std;
 #include <iostream>
 
 int main(int argc, char **argv)
-{   char znakA="A";
-    char znakB= "B";
-    int l14=14;
-    int l15=15;
-    cout <<(int)znakA<< (int)znakB<< endl;
-    cout << (char)l14 << (char)l15 << endl;
-    int reszty[16];
-    int liczba =0;
-    int podstawa =0;
-    int i =0;//indeks tabeli
+{   //char znakA="A";
+    //char znakB= "B";
+    //int l14=14;
+    //int l15=15;
+    //cout <<(int)znakA<< (int)znakB<< endl;
+    //cout << (char)l14 << (char)l15 << endl;
+    //int reszty[16];
+    //int liczba =0;
+    //int podstawa =0;
+    //int i =0;//indeks tabeli
     //120 -64= 56 ()
     //56-32=24  ()
     //24-16=8 (2^4=16)
