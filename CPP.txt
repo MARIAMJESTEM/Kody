@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T12:55:55+01:00
+
+====== CPP ======
+Created wtorek 30 styczeń 2018
+

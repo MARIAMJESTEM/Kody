@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-30T12:53:43+01:00
+
+====== Python ======
+Created wtorek 30 styczeń 2018
+**input("")** zapisuje podaną rzecz jako słowo
+**int(input(""))** Podana rzecz będzie liczbą 
+**#** komenatrz w py
+**print()** wydrukuj
+**.join ()**-  łączy elementy listy
+**len()** - sprawdza ilość elementów w liście
+****** to operator potęgowania
+
+
+****Przykład :
+liczba= []  liczba to jest lista 
+liczba.append(reszta) żeby dodać coś do listy to trzeba uzyć **.append**
+
+
