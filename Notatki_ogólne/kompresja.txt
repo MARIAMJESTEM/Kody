@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-31T12:09:59+01:00
+
+====== kompresja ======
+Created środa 31 styczeń 2018
+
+Kompresja - czyli zmniejszanie ilości danych 
+Jednym sposobem kompresji jest kod Morse'a
+.- - - . - - - . - - - 
+000111000111
+kompresja może być :
+a) stratna (zdjęcia generalnie mulitimedia)jpeg, usuwa się tony i ANIE TEZ SIĘ WYCINA , png (grafika  w internecie)<--- to były zdjęcia jbc , teraz formaty audio wideo MKV - kontener 
+b) bezstratna (Morse'a) jest wykorzystywana np. przyplikach z rozszerzeniem odt, xlsx, pptx, DOOXL(microsfot)

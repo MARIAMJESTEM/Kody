@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-31T12:12:36+01:00
+
+====== Różne ======
+Created środa 31 styczeń 2018
+
+* w jednym bajcie mozna zmieścić 256 znaków 
+* unikod - ten sposób kodowania zapisuje wszystkie litery jakie są na świecie we wszystkich językach 

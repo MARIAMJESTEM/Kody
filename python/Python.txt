@@ -8,12 +8,19 @@ Created wtorek 30 styczeń 2018
 **int(input(""))** Podana rzecz będzie liczbą 
 **#** komenatrz w py
 **print()** wydrukuj
-**.join ()**-  łączy elementy listy
+**.join ()**-  łączy elementy listy/ łączy znaki za pomocą łącznika np "-"
 **len()** - sprawdza ilość elementów w liście
+**.isdigit()** - sprawdza czy podany łańcuch jest cyfrą (działa dla słów czyli str)
+**.reverse()** - odwrócenie kolejności elementów(działa dla słów i liczb czyli dla sekwencji )
+**ord(znak)** - kod ASCII znaku  
+**chr(kod_ASCII)** - zwraca znak 
+**int()** - zmienia na liczbę całkowitą 
+**str()** - zmienia na napis 
+**.append**  dodaje cos do listy
 ****** to operator potęgowania
 
 
-****Przykład :
+ ****Przykład :
 liczba= []  liczba to jest lista 
 liczba.append(reszta) żeby dodać coś do listy to trzeba uzyć **.append**
 
