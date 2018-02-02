@@ -7,8 +7,35 @@ Created środa 31 styczeń 2018
 
 Kompresja - czyli zmniejszanie ilości danych 
 Jednym sposobem kompresji jest kod Morse'a
-.- - - . - - - . - - - 
-000111000111
+
 kompresja może być :
 a) stratna (zdjęcia generalnie mulitimedia)jpeg, usuwa się tony i ANIE TEZ SIĘ WYCINA , png (grafika  w internecie)<--- to były zdjęcia jbc , teraz formaty audio wideo MKV - kontener 
 b) bezstratna (Morse'a) jest wykorzystywana np. przyplikach z rozszerzeniem odt, xlsx, pptx, DOOXL(microsfot)
+Bit rate- wystepuje we wszystkich formatach audio wideo - ilośc danych na sekundę (ilość informacji przesyłanych na sekundę ) jakoś CD to 266 bit/s
+320 to dła ludzi o lepszym sprzęcie XDDDD 
+skala przepływności  (jednostka to Kb da;lej jest Mb - MEGA BIT NA , {mB to mega bajty}  ) 
+łacze ma max80 Mb 
+Zmierzyć mozna na speedtest.pl 
+
+znaki z kodu ASCII do 31 są niedrukowalne 
+*null - 0
+ *Line Feed - koniec lini (LF) 10 
+*Carriage return  (CR)-  powrót do początku lini 
+*znak końca lini w windows składa isę z LF i CR
+* to są znaki specjalnie  
+
+kodowanie UNIKOD 
+UTF8 wykorzystuje od 1-6 bajtów, standard występujący w roznych językach kodownia i na stronach internetowych 
+...- - -.. . - - -.. . - - - 
+000111000111
+KOd morse/a jest statystyczny
+
+
+
+The rain in Spain falls mainly on the plain
+The rain <3,3> Spa<9,4> falls m<11,3>ly on t<34,3>pl<15, 3>. ⇒
+znaki wstecz = > 6 bitów 
+długość ciągu => 3 bity 
+
+
+
