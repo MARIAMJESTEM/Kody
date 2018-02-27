@@ -1,4 +1,4 @@
-Content-Type: text/x-zim-wiki
+﻿Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2018-02-27T13:02:42+01:00
 
@@ -28,3 +28,15 @@ do szyfrowania i desyfrowania uzywana jest matematyka liczb pierwszych
 *** podpis elektroniczny- cyfrowa tozsamosc, musimy miec by zadzialal certyfikat
 
 ssh - przyklad stosowania kryptografi klucza asymetrycznego
+
+
+PRACA DOMOWA
+1) cezar
+szyfrogram: Qevme Qedyv 4625526444 Xevrsfvdik
+klucz :4
+2)przestawieniowy
+szyfrogram: Ma.Obaz1 rru1Tzir .aea 2rg 00n.M30o.
+klucz: 7
+3)vigenere
+szyfrogram: Swzve Mgvce 03.11.2000 Xaxjwovzkc
+klucz : gwinea
