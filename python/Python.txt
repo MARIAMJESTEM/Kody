@@ -24,4 +24,8 @@ Created wtorek 30 styczeń 2018
 liczba= []  liczba to jest lista 
 liczba.append(reszta) żeby dodać coś do listy to trzeba uzyć **.append**
 
+DO DOMU 
+zaszyfruj swoje dane osobowe imie nazwisko  data urodzenia miejsce urodzenia przy użyciu wszystkich poznanych szyfrów 
+w odpowiedzi podaj szyfrogramy i kluxcze 
+
 

@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-02-27T13:02:42+01:00
+
+====== SZYFROWANIE ======
+Created wtorek 27 luty 2018
+
+ASYMETRYCZNE
+(bywa nazywane  kluczem do wszystkiego )
+*klucz publiczny - ciag podajacy do czyjejs informacji, ten klucz udostepniamy NIE OBAWIAM SIE ZE KTOS TO DOSTANIE !!
+
+*klucz prywatny-  bankowi, instytucji publicznej
+JEST ZAPISYWANY I ZABEZPIECZANY HASLEM !!! 
+{klucze te tworza calosc wspolna } 
+
+
+algorytm RSA SLUZY DO WYGENEROWANIA DWOCH DUZYCH LICZB PIERWSZA TO KLUCZ PUBLICZNY A DRUGI PRYWATNYM , JEDNA LICZBA 128 BITÓW ZNAKÓW 
+Protokół HTTPS 
+HTTP jest szyfrowany przez TLS 
+certyfikat ssl 
+certyfikat -  wystawiany jest przez urzad certyfikacji czyli firme gwarantujaca tozamosc osoby ktora ma ten certyfikat 
+odciski niepowtarzalny ciag znakow 
+za pomoca ssl mozna szyfrowac poczte elektroniczna
+komunikatory szyfruja wiadomosci 
+do szyfrowania i desyfrowania uzywana jest matematyka liczb pierwszych
+
+
+*** podpis elektroniczny- cyfrowa tozsamosc, musimy miec by zadzialal certyfikat
+
+ssh - przyklad stosowania kryptografi klucza asymetrycznego
