@@ -1,4 +1,4 @@
-﻿Content-Type: text/x-zim-wiki
+Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2018-02-27T13:02:42+01:00
 
@@ -27,7 +27,7 @@ do szyfrowania i desyfrowania uzywana jest matematyka liczb pierwszych
 
 *** podpis elektroniczny- cyfrowa tozsamosc, musimy miec by zadzialal certyfikat
 
-ssh - przyklad stosowania kryptografi klucza asymetrycznego
+ssh - przyklad stosowania  kryptografi klucza asymetrycznego
 
 
 PRACA DOMOWA
