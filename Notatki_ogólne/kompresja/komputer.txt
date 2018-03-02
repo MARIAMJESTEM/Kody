@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T11:07:50+01:00
+
+====== komputer ======
+Created piątek 02 marzec 2018
+
+**procesor**- jednostka arytmetyczno logiczna, składa się z rejestrów jednym z nich jest akumulator [komórki w kótrych zapisywane są dane ] rozmiar procesora to 64 bitów
+pierwszym składnikiem architektury logicznej komputera jest procesor[szybki kalkulato]
+jeżeli jest napięcie 3-5V to jest logiczna jedynka 
+if 0.1 V logiczne 0 
+**ram** czyli pamięć swobodnego dostępu, w dowolnym momencie do dowolnej komurki można zapisać dane i je odczytać 
+**control unit** - jednostwa sterująca , ma synchronizować coś ( prace logicz)
+komunikuje się z procesorem i pamięcią za pomocą **szyny systemowej**
+obok szyny systemowej sa jeszcze dwie ta systemowa daje mozliwosć podstatowych wykonywania czegoś nie pamiętak 
+i jest **szyna danych** służy do przesyłania danych w odpowiedzniej częstotliwości 
+**szyna adresowa** decyduje o tym gdzie trafiają dane muszą one trafiać do konkrtetnych komórek procesora 
+część danych bierze się z pamięci **ROM** TO PAMIĘĆ TYLKO DO ODCZYTU 
+ROM  w odróżnieniu od RAMU zachowuje dane na stałe nawet jak wyłączymy prąd one tam będą 
+w ROMIE jest **BIOS** czyli podstawowy system wejścia wyjścia 
+uzytkownik nie może wgrywać swojego ROMA 
+każde urządzenie elektroniczne musi miec ROM i BIOS(może się inaczej nazywać )został zastąpiony standardem UEFI tzw. EFI 
+BIOS decyduje o tym jakie urządzrenia komputer jest w stanie rozpoznać i przekazać systemowi opecayjnemu 
