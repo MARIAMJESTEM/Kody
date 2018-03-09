@@ -104,4 +104,6 @@ materiał design czyli poqwrót do ikon płaskich
 microsoft wymyślił że okienko ma pasek tytułu i menu  , przyciski mini i maxi mlizacji i przyciskl zamknięcia  , i najważniejsza rzecz  to ikony 
 
 microsof ustandaryzował interface 
+w windows 8 wprowadzili interface kafelkowy bo to się nie nadaje na komputery PC 
+w ostatniej wersji systemu czyli windows 10 który raz zainsatujemy bedzie sie aktualizował do śmierci 
 
