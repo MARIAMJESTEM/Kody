@@ -63,7 +63,45 @@ zaletą windowsa jest to że rozpowszechnił interface graficzny który nazwano 
 zaleta nr2 to ustandaryzował interface graficzny wprowadziła standard ,że jak się raz nauczymy obsługi okienek to na rpożnych systemach każdy sobie poradzi 
 
 
+**09.03.18**
+dyski a i b byłuy zarezerwowane dla stacji dyskietek (elastycznych 3.5 calowe były dominatorami )na dyskietke 3,5 calowej 1 mega bajt danych  , od litery c wykrywał dysk twardy , a litera z t
+dawno dawno temu microsoft był firmą garażową , doszli do wniosku że musza mieć swój system operacyjny kupili od innej firmy pierwszy system to MS-DOS 
+MS-DOS był wydany po raz pierwszy 30 lat temu był wydany na architekture 8 16 32 gb wyżej nie jest w stanie działać 
+jak nacisne cmd to uruchamiamy powłokę działającą jak ta dosa 
+dir - większośc narzędzi tu jest
+edit-
+dir bin to polecenia jakie sa dostępne 
+devicehigh to sterownik CD rom służało do odczytu 
+shellhigh w tym pliku jest zdefiniowane że ma się załadować command.com
+z: litera i dwukropek to przejście na dany dysk
+cd wejście do katalogu
+ścieżka względna  to jest sposób dotarcia do katalogu z miejsca w którym jesteśmy 
+ścieżka bezwzględna zadzaiła z każdego katalogu działa "od tyłu" zaczyna się od katalogu głownego dysku 
+katalog głowny  "lietra "\
+ls / - główny katalog w linuxie
+w windows separator nazw plików i katalogów jest backslash a w linuxie slash 
+.. dwie kropki oznaczają poziom do góry  z katalogu do ogólnie dysku np  
+znak tyldy ~ oznacza katalog domowy uzytkownika 
+jak się poruszamy po katalogach to możemy podawać obie ścieżki 
+w czasach dosu wymyślonjo że nazwy plików składaja 8 liter max i trzy ostrzeżenia
+w windows pliki mają rozszerzenia bo w dosie miały  jak plik nie ma rozszerzenia tyo winndows nie wie z czymma doczynienia 
+ w linuxie  plik jest rozpoznawany po nagłówku w nim jst symbol 16 tkowy wskazując co to jest za plik 
+programy w linuxie rozszerzeń nie mają 
+w dosie pliki miały rozszerzenie exe albo com i tak jest też teraz ,  
+w dosie mamy atrybuty były tylko 4 
+1. a oznacza archiw czyli plik zapisany na dysku 
+2. r czyli plik tylko do odczytu 
+3. h to plik ukryty 
+4.s  systemowy
+dzisiaj sa wyznaczane przez właściowości plików 
+największym ograniczeniem dosa była ilość PAMIĘCI  640kB , nie był w stanie obsłuzyć nic więcej a największyb program mógł mieć 64kB 
+dos zarżadzał pamięcia w sposób bardzo sztywny 
+dos wykorzystywał tryb rzeczywisty procesora czyli w dosie było możliwe wywoływanie sprzętowcyh przerwań czyli rozkazy wydawane bezpośrednio procesorowi 
+przyszedł rok 1993 i microsoft zaczął mysleć o systemie graficznym czyli który dawałaby użytownikowi GUI graphic user interface 
+microsof zaczął wymyślac taki system wymyślili windows 1 i windows2 nie zyskały one popularności ale później wydali wundows 3.1x
+windows 3.11
+materiał design czyli poqwrót do ikon płaskich 
+microsoft wymyślił że okienko ma pasek tytułu i menu  , przyciski mini i maxi mlizacji i przyciskl zamknięcia  , i najważniejsza rzecz  to ikony 
 
-
-
+microsof ustandaryzował interface 
 
