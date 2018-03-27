@@ -107,3 +107,31 @@ microsof ustandaryzował interface
 w windows 8 wprowadzili interface kafelkowy bo to się nie nadaje na komputery PC 
 w ostatniej wersji systemu czyli windows 10 który raz zainsatujemy bedzie sie aktualizował do śmierci 
 
+
+
+**13.03.2018**
+LINUX dzisiaj na tapecie THE BEST SYSTEM EVA
+odpowiedni obraz iso pobieramy ze strony danej dystrybucji 
+dystrybucja linuxa
+linux nie o9znacza systemu a jądro systemu, 
+system windows i appla są własnościowe i zamknięte czyli nasz komputer nie jest nasz 
+a w linuxie było założenie żeby stworzyć system otwarty dla każdego ze źródłami jest on tzw open source te są tworzone przez ludzi z cąłego świata 
+jądro linuxa to podstawowy element dystrybucji linuxa 
+te dystrybucje składają się z jądro oraz oprogramowania dodatkowego
+samo jądro nie wystarczy do komunikacja z użytkownikiem dlatego dokłada się interface telstowy oraz graficzny 
+jądro+interface to tez ni ejest jeszcze system operacyjny bo potrzeba jeszcze oprogramowanie uzytkowe
+najwazniejsze dystrybucje to np debian nazywas am sienie uniwersalnym systemem operayjnym, bo mozna zainstalowac na urządezeniach o różnej architekturze
+w oparciu o debiana tworzone śa dwie inne dystrybucje czyli ubuntu i linux mint 
+debian to dystrybucja źródłowa,
+dystrybujce linuxa pobiera się w formacie obrazów instalacyjnych 
+są dwie wersje lts 
+wersje z kwietnia są stabilne a z października nie (nwm czemu)
+rufus służy do wypalania na pedrive np płyty instalacyjne windowsa 
+wyrózniamy dwa spsosoby partycjoinowania dysku twardego 
+dyski twarde sa spore i powinny być dzielone na części część dysku to partycja 
+jak jedna partycja zostanie uszkodzona i jest tylko jedna n dysku to wszystko idzie w kosmos
+w systemie windows to windows wymaga aby bys zawsze zainstalowanym na pierwszej poartycji dysku pierwszego 
+
+
+
+
