@@ -35,7 +35,7 @@ def main(args):
     assert potega_it(2, 3) == 8
     assert potega_rek(2, 3) == 8
 
-    # print("Potęga: ", potega_it(a, n))
+    print("Potęga: ", potega_it(a, n))
 
     return 0
 
