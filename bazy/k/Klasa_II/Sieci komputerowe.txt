@@ -1,0 +1,108 @@
+====== Sieci komputerowe ======
+Created środa 11 styczeń 2017
+
+Topologia gwiazdy - metoda połączenia komputerów w sieci komputerowej, zakłada istnienie użądzenia centralnego (switch/hub), używana głównie do sieci lokalnych (LAN), połączenia są niezależne od pozostałych komputerów
+
+Host - komputery podpięte do sieci
+
+Serwer - komputer usdostępniający zasoby.
+
+Klienci - komputery kożystające z zasobów serwera.
+
+Łączenie sieciowe:
+- szeregowe
+- równożędne
+(szkieletowa(?))
+
+Router - jego zadaniem jest łączenie sieci ze sobą, utworzona w ten sposób sieć jest nazywana (w mniejszym stopniu MAN (miejska sieć komputerowa), w większej skali WAN = LAN+MAN, czyli sieć rozległa, często wykracza poza kraj); wybierają najkorzystniejszą drogę do serwera; do niego jest również przypisany publiczny adres IP
+
+Internet - sieć sieci, system połączeń między komputerami.
+
+LAN - często są zbudowane za pomocą technologi ethernet
+
+WiFi - metoda łączenia sieci za pomocą technologii radiowej
+
+Światłowód - stosowany do tworzenia połączeń na ogromne odległości
+
+Trasowanie - metoda polegająca na wyznaczaniu jakiejś drogi.
+
+Komunikacja w internecie jest rozproszona - dane są dzielone na pakiety, które zostają wysłane i połączone u klienta.
+
+Model OSI/ISO - 
+
+Kapsułkowanie/enkapsulacja - polega na upakowaniu danych z wyższej warstwy w warstwie niższej danego protokołu po stronie nadawczej
+
+Dekapsulacja - odłączanie nagłówków w modelu OSI/ISO
+
+Model TCP/IP - protokół komunikacyjny; 
+
+Protokoły komunikacji - zbiór ścisłych reguł i kroków postępowania, które są automatycznie wykonywane przez urządzenia komunikacyjne w celu nawiązania łączności i wymiany danych;
+	warstwa aplikacji: 
+		-DNS (konwersja nazwy domenowej na adres IP),  port: 53
+		-FTP (protokół przesyłania plików w Internecie), port: 21
+		-HTTP (protokół dokumentów hipertekstowych; HTTP przesyła się żądania udostępnienia dokumentów WWW), port: 80
+				(rodzaje zapytań):
+					GET - zapytanie czy masz, a jeżeli masz to wyślij
+					POST - przyjęcie danych przezsłanych od klienta do serwera
+		-POP3 (protokół odbióru poczty elektronicznej), port: 110(domyślny), 995(szyfrowany)
+		-SMTP (protokół wysyłu poczty elektronicznej), port: 25 (domyślny), 465(szyfrowany)
+		-SSL (protokół wykorzystywany do szyfrowaniu przesyłanych i odbieranych danych)
+		-SSH (protokół służący do zdalnego łączenia się z komputerami i pracy z nimi), port: 22 
+
+Ping - komenda sieciowa służąca do diagnozy czy serwer jest dostępny(?);
+ip addr / ipconfig(windows)- 
+
+TCP - protokół transportowy (warstwa transportowa); warantuje pewność przesyłania danych oraz kieruje właściwe informacje do odpowiednich aplikacji. Opiera się to na wykorzystaniu portów określonych dla każdego połączenia; segmenty nie posiadają doklejonych nagłówków;
+	cechy:
+		-połączeniowy - nawiązanie połączenia ze zdalnym hostem, za pośrednictwem metody three way handshake; porcja danych wysyłana w pakiecie TCP nazywana jest segmentem;
+		-niezawodny - jeżeli nie wszystkie segmenty dotrą (suma kontorlna nie zgadza się), następuje retransmisja
+		
+Są takie zastosowania w Internecie, gdzie niezawodność jest wadą.
+UDP - protokół bliźniaczy do TCP; nie jest od niezawodny; nie ma gwarancji, że segment danych dotrze do odbiorcy;
+
+IP - (warstwa internetu); protokół adresowy; w warstwie internetowej dane są nazywane pakietami, posiadają one nagłówek sieciowy
+
+IPv4 - składa się z sekwencji 32-bitów, które są dzielone na 4 bajt, są one oddzielane kropkami. Są dwa rodzaje adresów: publiczne i prywatne;
+	adresy prywatne (lokalne) służą do komunikacji wewnątrz komputera, jego adres to localhost(127.0.0.1)
+	adresy publiczne
+	
+Adres IP składa się z części sieciowej (adres sieci), która jest wspólna, oraz z części hosta
+
+Maska sieciowa - mówi, ile bitów adresu IP określają adres sieci; decyduje w jakiej grupie widzi siebie wraz z innymi komputerami
+
+brd (Broadcast) - maksymalna wartość adresu sieci; obejmuje on wszystkie komputery w sieci; coś wysłane na ten adres, trafia do wszystkich komputerów w sieci;
+
+Serwery Proxy - 
+
+Tor - 
+
+IPv6 - składa się z sekwencji 128-bitów, dzielonych na 16 bajtów, są najczęściej zapisywane w zapisie szesnastkowym (0x)
+
+Brama domyślna - służy do określenia, jak wiele bitów służy jako adres prywatny, a ile jako adres komputera
+
+System DNS nie ma jednej, centralnej bazy.
+
+cache - zapisywanie do pamięci podręcznej np. adresów stron internetowych.
+
+Plik hosts - plik konfiguracyjny systemu operacyjnego służący do sztywnego mapowania nazw domen na adresy IP.
+
+DHCP - protokół dynamicznego konfigurowania hostów; zawiera adres IP, maskę podsieci, adres sprzętowy
+
+Adres MAC - adres sprzętowy, 
+
+ARP - protokół sieciowy umożliwiający mapowanie logicznych adresów warstwy sieciowej
+
+Szyfr podstawieniowy
+Szyfr Cezara
+
+Szyfr przestawieniowy
+Zapis tekstu w wierszach o ustalonej długości
+
+Szyfry z kluczem jawnym
+Kryptografia klucza publicznego - stosowany w szyfrowaniu i podpisach cyfrowych; zakłada istnienie conajmniej dwuch kluczy: publicznego i prywatnego; klucz publiczny służy do zaszyfrowania informacji, klucz publiczny do jej odczytu; 
+RSA - 
+AES -
+PGP (pretty good privacy) - 
+Funkcje skrótu - funkcja przyporządkowująca dowolnie dużej liczbie krótką o stałym rozmiarze; służą do ustalania krótkich i łatwych do weryfikacji sygnatór dla dowolnie dużych zbiorów danych; (sumy kontrolne)
+Podpis cyfrowy
+Protokół SSH

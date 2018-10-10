@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-01-17T12:56:44+01:00
+
+**Obiekty:**
+
+klasa - schemat obiektu
+objekt - instancja klasy
+
+klasy to nowy typ danych
+konstruktor inicjuje właściwości klasy
+
+
+Odwrotna notacja polska:
+Twórca: Łukasiewicz

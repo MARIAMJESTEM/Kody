@@ -1,0 +1,25 @@
+KLASA SAMOCHOD
+marka
+model
+pojemność silnika
+pojemność baku
+spalanie
+zatankuj(20)
+jedz(100)
+
+KLASA UCZEN
+imie
+nazwisko
+klasa
+oceny
+srednia()
+ustaw_klase("1A")
+
+KLASA FIGURA
+wlasciwosci(wysokosc, szerokosc, promien)
+typ(kwadrat, prostokat, kolo)
+nazwa
+pole
+obwod
+getPole
+getObwod

@@ -1,0 +1,13 @@
+====== Windows ======
+Created środa 15 marzec 2017
+architektura oprogramowania - podstawa organizacji
+jądro systemu windows (NT) - 
+tryb podsystemu
+tryb jądra - posiada pełny dostęp do sprzętu i zasobów
+pamięć wirtualna i plik wymiany - 
+wielozadaniowość - 
+wywłaszczenie - 
+tryb chroniony, tryb wirtualny
+proces - instrukcja wykonywanego programu
+wątki - 
+rejestr - 

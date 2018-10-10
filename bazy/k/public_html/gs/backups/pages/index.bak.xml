@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Thu, 21 Dec 2017 08:25:54 +0100</pubDate><title><![CDATA[Witamy]]></title><url><![CDATA[index]]></url><meta><![CDATA[getsimple, easy, content management system]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Witamy]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;h2&gt;Witaj na stronie klasy 3A&lt;/h2&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Lista uczniów&lt;/a&gt;
+
+		&lt;ul&gt;
+			&lt;li&gt;Grupa 1&lt;/li&gt;
+			&lt;li&gt;Grupa 2&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A to my (kliknij, żeby zobaczyć powiększone zdjęcie):&lt;/p&gt;
+
+&lt;p style=&quot;text-align: center&quot;&gt;&lt;a blank=&quot;&quot; href=&quot;http://localhost/~kl3ag2/gs/data/uploads/images/3A_201718.jpg&quot; target=&quot;&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://localhost/~kl3ag2/gs/data/uploads/images/3A_201718.jpg&quot; style=&quot;width: 300px; height: 217px;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr/&gt;
+&lt;p&gt;Znajdź nas na &lt;a href=&#039;https://plus.google.com/discover?hl=pl&#039;&gt;Google+&lt;/a&gt;&lt;/p&gt;]]></content><private><![CDATA[]]></private><author><![CDATA[uczen]]></author></item>

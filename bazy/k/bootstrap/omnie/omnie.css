@@ -1,0 +1,48 @@
+body {
+  background-color:#DDDDDD;
+}
+
+container {
+  padding-top: 7px;
+  color: white;
+  font-size: 18px;
+}
+
+container li{
+  display: inline;
+}
+
+.clearfix {
+  text-align: justify;
+  background-color: #323232aa;
+  border-radius: 20px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+
+img {
+  text-align: center;
+  margin: 5px;
+  margin-left: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 45%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#brand {
+  font-size: 24px;
+  color:white;
+}
+
+.navbar-nav {
+  padding-top: 5px;
+}
+
+#hs {
+  color:#343A40;
+}

@@ -1,0 +1,35 @@
+====== Linux ======
+Created wtorek 28 marzec 2017
+
+Linux - rodzina systemów operacjynych opartych na jądrze Linux.
+
+Jądro systemu Linux - 
+
+Powłoka sysytemowa - 
+
+Kompilatory - 
+
+Biblioteki - 
+
+GNU - 
+
+Zastosowanie:
+	- podstawowy system operacyjny serwerów
+	- odtarzacze multimedialne
+	- telefony
+
+Interfejsy:
+	- graficzny
+	- wiersza poleceń
+
+Interfejsy graficzne:
+	- małe menadżery okien
+	- duże środowiska graficzne
+	
+GTK - wykorzystywana przez GNOME
+
+KDE - 
+
+Qt - wykorzystywana przez KDE
+
+Model oprogramowania - 

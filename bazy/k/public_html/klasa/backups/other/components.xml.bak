@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel><item><title><![CDATA[Sidebar]]></title><slug>sidebar</slug><value><![CDATA[&lt;h2&gt;Menu&lt;h2&gt;
+&lt;?php get_i18n_navigation(return_page_slug(),1,2); ?&gt;
+&lt;div style=&#039;font-size: 13px;&#039;&gt;
+&lt;b&gt;Warto odwiedzić:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#039;http://lo1.sandomierz.pl/&#039;&gt;I LO CG S-rz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#039;https://404.g-net.pl/&#039;&gt;Przystajnik&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+]]></value></item><item><title><![CDATA[Tagline]]></title><slug>tagline</slug><value><![CDATA[Just Another GetSimple Website]]></value></item></channel>

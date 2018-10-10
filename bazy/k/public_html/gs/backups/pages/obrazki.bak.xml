@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Thu, 14 Dec 2017 08:19:05 +0100</pubDate><title><![CDATA[Obrazki]]></title><url><![CDATA[obrazki]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Obrazki]]></menu><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://localhost/~kl3ag2/gs/data/uploads/images/00001.gif&quot; style=&quot;width: 361px; height: 250px; float: right;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;H01&lt;/p&gt;
+
+&lt;p&gt;(% gallery name=galeria-01 %)&lt;/p&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[uczen]]></author><menuOrder><![CDATA[3]]></menuOrder></item>
