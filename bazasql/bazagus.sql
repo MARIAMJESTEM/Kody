@@ -24,6 +24,5 @@ CREATE TABLE powierzchnie(
     id_miasta INTEGER,
     FOREIGN KEY (id_miasta) REFERENCES miasta(id_miasta)
     );
-INSERT INTO miasta VALUES(NULL, 'Warszawa', 'Mazowieckie'):
 -- sqlite3 baza.db < bazagus.sql
 -- sqlite3 
