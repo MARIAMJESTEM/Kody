@@ -1,16 +1,12 @@
-<!DOCTYPE html >
-<html language = 'pl'>
-
-<head>
-	<meta charset=utf-8" />
-	<title>Quiz</title>
-</head>
-
-<body>
-	<h1>Pytania</h1>
+{% extends "szablon.html"}
+{%block tytul %}-Quiz - strona główna{% endblock %}
+{%block h1%}Lista pytań {%endblock%}
+{% block tresc %}
+	
     {% for p in query %}
+    <p>
         {{ p.pytanie }}
+    </p>
     {% endfor %}
-</body>
+{% endblock%}
 
-</html>

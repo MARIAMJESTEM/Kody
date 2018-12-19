@@ -23,7 +23,7 @@ def index():
     return render_template('index.html')
     
 @app.route('/lista')
-def index():
+def lista():
     
     return render_template('lista.html', query = pytania)
 
