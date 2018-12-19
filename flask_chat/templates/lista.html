@@ -1,0 +1,16 @@
+<!DOCTYPE html >
+<html language = 'pl'>
+
+<head>
+	<meta charset=utf-8" />
+	<title>Quiz</title>
+</head>
+
+<body>
+	<h1>Pytania</h1>
+    {% for p in query %}
+        {{ p.pytanie }}
+    {% endfor %}
+</body>
+
+</html>

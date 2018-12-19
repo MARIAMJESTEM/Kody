@@ -20,8 +20,8 @@ def czytaj_dane(plik, separator=","):
     if not czy_jest(plik):
         return dane
     
-    with open(plik, newline='', encoding='utf-8') as plikcsv:
-        tresc = csv.reader(plikcsv, delimiter=separator, skipinitialspace=True)
+    with open(plik, 'r',newline='', encoding='utf-8') as plikcsv:
+        tresc = csv.reader(plikcsv, delimiter=separator)
         for rekord in tresc:
             dane.append(tuple(rekord))
     

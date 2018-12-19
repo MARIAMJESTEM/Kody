@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<title>Quiz – Pytania</title>
+
+</head>
+
+<body>
+    <form>
+    <h1>Lista pytań</h1>
+    <form method ="POST">
+    
+    {% for p in query %}
+    <p>
+        <!-- wypisujemy id i treść pytania -->
+        {{ p.id }} {{ p.pytanie }}
+        
+        <br>
+        {% for o in p.odpowiedzi %}
+        <label>
+            <input type = "radio" value="{{ o.id }}" name="{{p.id}}">
+            {{ o.odpowiedz }}
+            </label>
+        {% endfor %}
+        <br>
+    </p>
+    {% endfor %}
+    <input type = "submit" value= "Zapisz odp ">
+    </form>
+</body>
+
+</html>

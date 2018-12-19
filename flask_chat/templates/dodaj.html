@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!--
+   index.html
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Quiz</title>
+</head>
+
+<body>
+    <h1>Quiz - dodawanie pytań </h1>
+    <form methods = "POST" action = "" >
+        {{ form.csrf_token}}
+        
+        {{ form.pytanie.label}} <br>
+        {{form.pytanie}} <br>
+        <br>
+        {{ form.kategoria.label}} <br>
+        {{form.kategoria}} <br>
+        <br>
+        <label>Podaj odpowiedzi i zaznacz poprawną </label><br>
+        <ol>
+        {% for o in form.odpowiedzi %}
+        <li>{{ o }</li>
+        {% endfor %} 
+        </ol>
+        <input type = "submit" value = "Zapisz pytanie">
+    </form> 
+    <p>
+        <a href ="{{ url_for('index') }}">Strona głowna</a>
+    </p>
+</body>
+
+</html>

@@ -24,7 +24,7 @@ def kw09():
     
     )
     for obj in query:
-        print(obj.klasa.klasa, obj.ilu)
+        print(obj.klasa.klasa,( obj.ilu))
     
 def kw08():
     """lista nazwisk uczniów i nazw klas"""
@@ -48,7 +48,7 @@ def kw10():
     
     )
     for obj in query:
-        print(obj.przedmiot.przedmiot, obj.ile)
+        print(obj.przedmiot.przedmiot, (obj.ile))
         
 def kw11():
     """po ile ocen mają uczniowie"""
@@ -60,8 +60,47 @@ def kw11():
     
     )
     for obj in query:
-        print(obj.uczen.nazwisko, obj.ile)
+        print(obj.uczen.nazwisko, (obj.ile))
         
+def kw12():
+    """średnia ocen"""
+    query=(Ocena
+    .select(fn.AVG(Ocena.id).allias('srednia'),Ocena.uczen.nazwisko)
+    .join(Uczen)
+    .group_by(Uczen)
+    .order_by(SQL('srednia').asc())
+    
+    )
+    for obj in query:
+        print(obj.uczen.nazwisko, (obj.ile))
+    
+def kw13():
+    """średnia ocen jednego ucznia Szymczak z poszczególnych przedmiotów"""
+    query=(Ocena
+    .select(Ocena.uczen.nazwisko, Ocena.przedmiot.przedmiot, fn.AVG(Ocena.id).allias('srednia'))
+    .join(Uczen)
+    .join_from(Ocena, Przedmiot)
+    .where(Ocena.uczen.nazwisko== 'Szymczak')
+    .group_by(Ocena.przedmiot.przedmiot)
+    .order_by(SQL('srednia').asc())
+    
+    )
+    for obj in query:
+        print(obj.uczen.nazwisko, obj.przedmiot.przedmiot, (obj.srednia))
+        
+def kw14():
+    """ ilu uczniów ma średnią powyżej 3.5 z wf?"""
+    query=(Ocena
+        .select(Ocena.uczen.nazwisko,fn.AVG(Ocena.ocena).allias('srednia')
+        .join(Uczen)
+        .join_from(Ocena, Przedmiot)
+        .where(Ocena.przedmiot.przedmiot== 'WF')
+        .group_by(Ocena.uczen.nazwisko)
+        
+        )
+        query = [obj for obj in query if obj.srednia > 3.5 ]
+        for obj in query:
+            print (obj.uczen.nazwisko, round(obj.srednia,2))
         
 def main(args):
     baza.connect()  # połączenei z bazą 
