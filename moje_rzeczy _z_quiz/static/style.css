@@ -1,0 +1,20 @@
+/*
+ * style.css
+ * 
+ 
+ */
+body {
+    background: #FFC0CB;
+    color: #A52A2A;
+    }
+#menu li { display: inline; }
+#komunikaty {
+    width: 80%;
+    margin: 2em;
+    border-radius: 5px;
+    background-color: lightgrey;
+
+}
+span.blad {color:red;}
+span.sukces {color: green;}
+span.kom {color: blue;}

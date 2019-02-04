@@ -1,36 +1,27 @@
-<!DOCTYPE html>
-<html lang="pl">
-<!--
-   index.html
--->
+{% extends "szablon.html" %}
+{% block tytul %}Quiz – dodawanie potań{% endblock %}
+{% block h1 %}Quiz – dodawanie pytań{% endblock %}    
+{% block tresc %}
 
-<head>
-    <meta charset="utf-8" />
-    <title>Quiz</title>
-</head>
+    <h2>Dodaj pytanie</h2>
 
-<body>
-    <h1>Quiz - dodawanie pytań </h1>
-    <form methods = "POST" action = "" >
-        {{ form.csrf_token}}
+    <form method="POST" action="">
+        <div class="form-group">
+        {{ form.csrf_token }}
+    
+        {{ form.pytanie.label }}<br>
+        {{ form.pytanie(class_="form-control") }}<br>
+        {{ form.kategoria.label }}<br>
+        {{ form.kategoria(class_="form-control") }}<br>
         
-        {{ form.pytanie.label}} <br>
-        {{form.pytanie}} <br>
-        <br>
-        {{ form.kategoria.label}} <br>
-        {{form.kategoria}} <br>
-        <br>
-        <label>Podaj odpowiedzi i zaznacz poprawną </label><br>
-        <ol>
-        {% for o in form.odpowiedzi %}
-        <li>{{ o }</li>
-        {% endfor %} 
-        </ol>
-        <input type = "submit" value = "Zapisz pytanie">
-    </form> 
-    <p>
-        <a href ="{{ url_for('index') }}">Strona głowna</a>
-    </p>
-</body>
-
-</html>
+    <label>Podaj odpowiedzi i zaznacz poprawną</label><br>
+    <ol>
+    {% for o in form.odpowiedzi %}
+        <li>{{ o }}</li>
+    {% endfor %}
+    </ol>
+    
+        <input type="submit" class="btn btn-default" value="Zapisz pytanie">
+    </div>
+    </form>
+{% endblock %}

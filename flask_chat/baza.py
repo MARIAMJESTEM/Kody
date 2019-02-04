@@ -2,12 +2,10 @@
 # -*- coding: utf-8 -*-
 #
 #  baza.py
-#  
 import csv
-import sqlite3
 import os.path
-
 from modele import *
+
 
 def czy_jest(plik):
     """F. sprawdza, czy plik istnieje na dysku"""
@@ -27,7 +25,8 @@ def czytaj_dane(plik, separator=","):
         for rekord in tresc:
             dane.append(tuple(rekord))
     return dane
-    
+
+
 def dodaj_dane(dane):
     
     for model, plik in dane.items():
@@ -40,27 +39,23 @@ def dodaj_dane(dane):
 
 
 def main(args):
-    baza_plik = 'modele.py'
     if os.path.exists(baza_nazwa):
         os.remove(baza_nazwa)
     baza.connect()  # połączenie z bazą
-    baza.create_tables([Kategoria, Pytanie, Odpowiedz ])  # tworzymy tabele
+    baza.create_tables([Kategoria, Pytanie, Odpowiedz])  # tworzymy tabele
 
     dane = {
         Kategoria: 'kategorie',
         Pytanie: 'pytania',
-        Odpowiedz: 'odpowiedzi'
-        
+        Odpowiedz: 'odpowiedzi',
     }
 
     dodaj_dane(dane)
     
     baza.commit()
     baza.close()
+    
     return 0
-        
-
-
 
 if __name__ == '__main__':
     import sys

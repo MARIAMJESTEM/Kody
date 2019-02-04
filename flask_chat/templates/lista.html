@@ -1,12 +1,12 @@
-{% extends "szablon.html"}
-{%block tytul %}-Quiz - strona główna{% endblock %}
-{%block h1%}Lista pytań {%endblock%}
+{% extends "szablon.html" %}
+{% block tytul %}Quiz – lista pytań{% endblock %}
+{% block h1 %}Quiz – lista pytań{% endblock %}    
 {% block tresc %}
-	
+  <h2>Lista pytań</h2>
+  <ol>
     {% for p in query %}
-    <p>
-        {{ p.pytanie }}
-    </p>
+        <li>{{ p.pytanie }}</li>
     {% endfor %}
-{% endblock%}
+  </ol>
 
+{% endblock %}

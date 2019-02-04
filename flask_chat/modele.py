@@ -6,8 +6,9 @@
 from peewee import *
 
 baza_nazwa = 'quiz.db'
-baza = SqliteDatabase(baza_nazwa)  
+baza = SqliteDatabase(baza_nazwa)  # instancja bazy
 
+### MODELE #
 class BazaModel(Model):
     class Meta:
         database = baza
@@ -22,7 +23,7 @@ class Pytanie(BazaModel):
 class Odpowiedz(BazaModel):
     odpowiedz = CharField(null=False)
     pytanie = ForeignKeyField(Pytanie, related_name='odpowiedzi')
-    odpok = IntegerField(default = 0)
+    odpok = IntegerField(default=0)
 
 
 if __name__ == '__main__':

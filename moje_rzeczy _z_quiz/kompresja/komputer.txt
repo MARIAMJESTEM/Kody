@@ -1,0 +1,137 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-03-02T11:07:50+01:00
+
+====== komputer ======
+Created piątek 02 marzec 2018
+
+**procesor**- jednostka arytmetyczno logiczna, składa się z rejestrów jednym z nich jest akumulator [komórki w kótrych zapisywane są dane ] rozmiar procesora to 64 bitów
+pierwszym składnikiem architektury logicznej komputera jest procesor[szybki kalkulato]
+jeżeli jest napięcie 3-5V to jest logiczna jedynka 
+if 0.1 V logiczne 0 
+**ram** czyli pamięć swobodnego dostępu, w dowolnym momencie do dowolnej komurki można zapisać dane i je odczytać 
+**control unit** - jednostwa sterująca , ma synchronizować coś ( prace logicz)
+komunikuje się z procesorem i pamięcią za pomocą **szyny systemowej**
+obok szyny systemowej sa jeszcze dwie ta systemowa daje mozliwosć podstatowych wykonywania czegoś nie pamiętak 
+i jest **szyna danych** służy do przesyłania danych w odpowiedzniej częstotliwości 
+**szyna adresowa** decyduje o tym gdzie trafiają dane muszą one trafiać do konkrtetnych komórek procesora 
+część danych bierze się z pamięci **ROM** TO PAMIĘĆ TYLKO DO ODCZYTU 
+ROM  w odróżnieniu od RAMU zachowuje dane na stałe nawet jak wyłączymy prąd one tam będą 
+w ROMIE jest **BIOS** czyli podstawowy system wejścia wyjścia 
+uzytkownik nie może wgrywać swojego ROMA 
+każde urządzenie elektroniczne musi miec ROM i BIOS(może się inaczej nazywać )został zastąpiony standardem UEFI tzw. EFI 
+BIOS decyduje o tym jakie urządzrenia komputer jest w stanie rozpoznać i przekazać systemowi opecayjnemu 
+
+
+
+
+**06.03.2018**
+dawne komputey nie miały systemu operacyjnego 
+pierwsze komputery byly konstruowane w celu wykonywania odpowiednich zadań, dzisiejsze urządzenia jak wgra sie odpowiednie oprogramowanie to mogą wykonywć rzeczy nawet te do których nie są przeznaczone
+pierwsze systemy operacyjne były przeznaczone do danego zakresu 
+w miare ewolucji pojawiła się idea otwartego systemu operacyjnego 
+jest otwarty czyli uniwersalny (Linux, może działać na wileu architekturach sprzętowych czyli )
+debiam jest jednym z nastarszych systemów jest uniwersalny ponieważ 
+amd64-czyli architektura 64 bitowa, w nazwie ma logo z pierwszego procesora  można spotkac też zapus xmd64 większość komputerów wspiera taką architekture 
+i386- to architektura dotycząca procesów ale 32 bitowych 
+x85 - to tez 32 bitowa bywa oznaczana jako i 386 
+oprócz tego jest cxała rodzina procesorów ARM procesory te sa rozpowszechnione wśród tabletów i komórek , nawet niektórzy w oparciu o to budują komputery i mikro komputery 
+na bazie rasberry pi3 można stworzyć prosty  serwer, na jego bazie można znależć wszystkie składowe komputera 
+windows dopiero niedawno dorobił się ARM ale nie da sie na tym uruchomić oprogramiwania 
+są jeszcze architektury MIPS , jest uzywana w ruterach np tplink konsolach playstation 
+otwarty system peracyjny udostępni nam obsługe różnych sprzętów różnych architektur 
+oprogramoiwani eotwarte czyli żródła danego oprogramowania są ogólnie dostepne oznacza to z ejak ktoś ma chęć to moż ezajrzeć do fragmentu kodu który jest jej częścią 
+jądro UNIXA jest stworzone przez miliony ludzi ale "pokazywane" przez dwie firmy
+system operacyjny łączy te trzy rzeczy :
+*hardwar 
+*oprogramowanie uzytkowe soft ware
+*użytkownik user
+
+system operacyjny to zorganizowany zespół programów to p[rogramy ale tez podstawowe procedury obsługi sprzętu 
+pierwszym składnikiem systemu operacyjnego  jest jąrdo czyli warstwa oprogramowania operująca bezpośrednio na sprzęcie , jądro wczytuje sterowniki urządzeń zewnętrzynych 
+każde urządzenie które jest w komputerze musi być udostępnione (..)
+dzięki sterownikom tworzy się (...)
+są jądra hybrydowe (samo w sobie nie zawiera wszystkiego , sterowniki i innne elementy będą osobną częścią mogą być wolniejsze w działaniu ale przez to stabilniejsze )i monolityczne(to jądro które stara się obsłużyc w całości sprzęt który udostepnia sie aplikacjom i uzytkownikowi wada to  jak w sterowniku jest błąd to system przestaje byc stabilny)
+jądro systemu to element podstawowy udostępnia użytkownikowi sprzęt komputerowy i robi to w formie wirtualnej robi sie to po to aby system był stabilniejszy 
+wirtualizacja czyli kolejne zadanie systemu operacyjnego 
+system operacyjny nadzoruje działanie komputera czyli przydziela zasoby , musi istniec jakis psosób zarządzania (jak np  jest wiele aplikacji otwartych system musi podzielić cxzas pracy procesora dla tych wszytskich aplikacji )system zarządza zasobami sprzętu 
+początkowe systemy były przeznaczone dla jedneo uzytkownika a nowe dla wielu 
+zwykły uzytkownik jak się styka z systemem operacyjnym to widzi interface
+pierwsze systemy komunikowały się z uzytkownikiem poprzez lartke z dziurkami LOOOO;L
+PIERWSZY INTERFACE TEKSTOWY BYŁ UDOSTĘPNIANY W FORMIE TERMINALA czyli klawiatura i monitor bo prawdziwy komputer był za ścianą 
+zaletą windowsa jest to że rozpowszechnił interface graficzny który nazwano okienkowym metafora ta m≥ówi że wszystkie interface graficzne to okienka 
+zaleta nr2 to ustandaryzował interface graficzny wprowadziła standard ,że jak się raz nauczymy obsługi okienek to na rpożnych systemach każdy sobie poradzi 
+
+
+**09.03.18**
+dyski a i b byłuy zarezerwowane dla stacji dyskietek (elastycznych 3.5 calowe były dominatorami )na dyskietke 3,5 calowej 1 mega bajt danych  , od litery c wykrywał dysk twardy , a litera z t
+dawno dawno temu microsoft był firmą garażową , doszli do wniosku że musza mieć swój system operacyjny kupili od innej firmy pierwszy system to MS-DOS 
+MS-DOS był wydany po raz pierwszy 30 lat temu był wydany na architekture 8 16 32 gb wyżej nie jest w stanie działać 
+jak nacisne cmd to uruchamiamy powłokę działającą jak ta dosa 
+dir - większośc narzędzi tu jest
+edit-
+dir bin to polecenia jakie sa dostępne 
+devicehigh to sterownik CD rom służało do odczytu 
+shellhigh w tym pliku jest zdefiniowane że ma się załadować command.com
+z: litera i dwukropek to przejście na dany dysk
+cd wejście do katalogu
+ścieżka względna  to jest sposób dotarcia do katalogu z miejsca w którym jesteśmy 
+ścieżka bezwzględna zadzaiła z każdego katalogu działa "od tyłu" zaczyna się od katalogu głownego dysku 
+katalog głowny  "lietra "\
+ls / - główny katalog w linuxie
+w windows separator nazw plików i katalogów jest backslash a w linuxie slash 
+.. dwie kropki oznaczają poziom do góry  z katalogu do ogólnie dysku np  
+znak tyldy ~ oznacza katalog domowy uzytkownika 
+jak się poruszamy po katalogach to możemy podawać obie ścieżki 
+w czasach dosu wymyślonjo że nazwy plików składaja 8 liter max i trzy ostrzeżenia
+w windows pliki mają rozszerzenia bo w dosie miały  jak plik nie ma rozszerzenia tyo winndows nie wie z czymma doczynienia 
+ w linuxie  plik jest rozpoznawany po nagłówku w nim jst symbol 16 tkowy wskazując co to jest za plik 
+programy w linuxie rozszerzeń nie mają 
+w dosie pliki miały rozszerzenie exe albo com i tak jest też teraz ,  
+w dosie mamy atrybuty były tylko 4 
+1. a oznacza archiw czyli plik zapisany na dysku 
+2. r czyli plik tylko do odczytu 
+3. h to plik ukryty 
+4.s  systemowy
+dzisiaj sa wyznaczane przez właściowości plików 
+największym ograniczeniem dosa była ilość PAMIĘCI  640kB , nie był w stanie obsłuzyć nic więcej a największyb program mógł mieć 64kB 
+dos zarżadzał pamięcia w sposób bardzo sztywny 
+dos wykorzystywał tryb rzeczywisty procesora czyli w dosie było możliwe wywoływanie sprzętowcyh przerwań czyli rozkazy wydawane bezpośrednio procesorowi 
+przyszedł rok 1993 i microsoft zaczął mysleć o systemie graficznym czyli który dawałaby użytownikowi GUI graphic user interface 
+microsof zaczął wymyślac taki system wymyślili windows 1 i windows2 nie zyskały one popularności ale później wydali wundows 3.1x
+windows 3.11
+materiał design czyli poqwrót do ikon płaskich 
+microsoft wymyślił że okienko ma pasek tytułu i menu  , przyciski mini i maxi mlizacji i przyciskl zamknięcia  , i najważniejsza rzecz  to ikony 
+
+microsof ustandaryzował interface 
+w windows 8 wprowadzili interface kafelkowy bo to się nie nadaje na komputery PC 
+w ostatniej wersji systemu czyli windows 10 który raz zainsatujemy bedzie sie aktualizował do śmierci 
+
+
+
+**13.03.2018**
+LINUX dzisiaj na tapecie THE BEST SYSTEM EVA
+odpowiedni obraz iso pobieramy ze strony danej dystrybucji 
+dystrybucja linuxa
+linux nie o9znacza systemu a jądro systemu, 
+system windows i appla są własnościowe i zamknięte czyli nasz komputer nie jest nasz 
+a w linuxie było założenie żeby stworzyć system otwarty dla każdego ze źródłami jest on tzw open source te są tworzone przez ludzi z cąłego świata 
+jądro linuxa to podstawowy element dystrybucji linuxa 
+te dystrybucje składają się z jądro oraz oprogramowania dodatkowego
+samo jądro nie wystarczy do komunikacja z użytkownikiem dlatego dokłada się interface telstowy oraz graficzny 
+jądro+interface to tez ni ejest jeszcze system operacyjny bo potrzeba jeszcze oprogramowanie uzytkowe
+najwazniejsze dystrybucje to np debian nazywas am sienie uniwersalnym systemem operayjnym, bo mozna zainstalowac na urządezeniach o różnej architekturze
+w oparciu o debiana tworzone śa dwie inne dystrybucje czyli ubuntu i linux mint 
+debian to dystrybucja źródłowa,
+dystrybujce linuxa pobiera się w formacie obrazów instalacyjnych 
+są dwie wersje lts 
+wersje z kwietnia są stabilne a z października nie (nwm czemu)
+rufus służy do wypalania na pedrive np płyty instalacyjne windowsa 
+wyrózniamy dwa spsosoby partycjoinowania dysku twardego 
+dyski twarde sa spore i powinny być dzielone na części część dysku to partycja 
+jak jedna partycja zostanie uszkodzona i jest tylko jedna n dysku to wszystko idzie w kosmos
+w systemie windows to windows wymaga aby bys zawsze zainstalowanym na pierwszej poartycji dysku pierwszego 
+
+
+
+

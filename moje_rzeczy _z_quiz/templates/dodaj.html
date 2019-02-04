@@ -1,0 +1,24 @@
+{% extends "szablon.html" %}
+{% block tytul %}Quiz â dodawanie pytań{% endblock %}
+{% block h1 %}Quiz â dodawanie pytań{% endblock %}    
+{% block tresc %}
+
+    <form method="POST" action="">
+    {{ form.csrf_token }}
+    
+    {{ form.pytanie.label }}<br>
+    {{ form.pytanie }}<br>
+    <br>
+    {{ form.kategoria.label }}<br>
+    {{ form.kategoria }}<br>
+    <br>
+    <label>Podaj odpowiedzi i zaznacz poprawnie</label><br>
+    <ol>
+    {% for o in form.odpowiedzi %}
+        <li>{{ o }}</li>
+    {% endfor %}
+    </ol>
+    
+    <input type="submit" value="Zapisz pytanie">
+    </form>
+{% endblock %}
