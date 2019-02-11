@@ -22,7 +22,7 @@ void drukujOsoby(osoba tb[], int ile ){
     
     }
 
-
+}
 void getOsoby(osoba tb[], int ile){
     for(int i=0; i < ile; i++){
     osoba uczen;
@@ -35,7 +35,8 @@ void getOsoby(osoba tb[], int ile){
     tb[i] = uczen;
     cin.ignore(1);
     }
-]
+}
+
 void zapiszOsoby(osoba tb[], int ile){
     ofstream plik;
     plik.open("osoby.txt");
