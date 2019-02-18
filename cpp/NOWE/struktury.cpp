@@ -41,7 +41,7 @@ void zapiszOsoby(osoba tb[], int ile){
     ofstream plik;
     plik.open("osoby.txt");
     for(int i=0; i < ile; i++){
-        plik << tb[i].imie << " " << tb[i].nazwisko << " " <<tb[i].wiek << "\n"
+        plik << tb[i].imie << " " << tb[i].nazwisko << " " <<tb[i].wiek << "\n";
     
     }
     plik.close();
