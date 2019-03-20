@@ -3,6 +3,8 @@
 
 #ifndef __CAR_H_
 #define __CAR_H_
+using namespace std;
+
 class Car{
      private:
         string marka;
@@ -15,5 +17,5 @@ class Car{
          void dodaj();
          void dane();
     
-}
+};
 #endif
