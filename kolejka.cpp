@@ -13,20 +13,15 @@ int ile =0;
 int tail =0;
 
 
-void empty() {
-    if (sp == 0) {
-        cout << "Stos pusty" << endl;
-    } else {
-        cout << "Stos nie jest pusty" << endl;
-    }
-}
-
 void pop() {
-    if (sp-1 < 0) {
-        cout << "Stos pusty!";
+    if (ile==0) {
+        cout << "Kolejka jest pusta!";
+        head = tail= 0;
     } else {
-        cout << "POP: " << dane[sp-1] << endl;
-        sp--;
+        cout << dane[head]<< endl;
+        tail =head;
+        head++;
+        ile--;
     }
 }
 
