@@ -12,7 +12,7 @@ int sp = 0;
 
 void empty() {
     if (sp == 0) {
-        cout << "Stos pusty" << endl;
+        cout << "Stos pusty stos" << endl;
     } else {
         cout << "Stos nie jest pusty" << endl;
     }
