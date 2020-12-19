@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/package.hpp
+set
+-
+
+C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/main.cpp
+iostream
+-
+package.hpp
+C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/package.hpp
+
