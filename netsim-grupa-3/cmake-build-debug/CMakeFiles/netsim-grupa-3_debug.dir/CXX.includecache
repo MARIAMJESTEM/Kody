@@ -6,13 +6,45 @@
 
 #IncludeRegexTransform: 
 
+../include/nodes.hpp
+optional
+-
+memory
+-
+package.hpp
+../include/package.hpp
+types.hpp
+../include/types.hpp
+storage_types.hpp
+../include/storage_types.hpp
+
 ../include/package.hpp
 set
 -
+types.hpp
+../include/types.hpp
+
+../include/storage_types.hpp
+list
+-
+algorithm
+-
+iterator
+-
+package.hpp
+../include/package.hpp
+
+../include/types.hpp
 
 C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/main.cpp
 iostream
 -
 package.hpp
 C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/package.hpp
+nodes.hpp
+C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/nodes.hpp
+
+C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/src/package.cpp
+package.hpp
+C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/src/package.hpp
 

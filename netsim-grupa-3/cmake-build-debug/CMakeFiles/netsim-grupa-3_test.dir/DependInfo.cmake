@@ -4,7 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/src/package.cpp" "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/cmake-build-debug/CMakeFiles/netsim-grupa-3_test.dir/src/package.cpp.obj"
+  "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/src/storage_types.cpp" "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/cmake-build-debug/CMakeFiles/netsim-grupa-3_test.dir/src/storage_types.cpp.obj"
   "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/test/main_gtest.cpp" "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/cmake-build-debug/CMakeFiles/netsim-grupa-3_test.dir/test/main_gtest.cpp.obj"
+  "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/test/test_nodes.cpp" "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/cmake-build-debug/CMakeFiles/netsim-grupa-3_test.dir/test/test_nodes.cpp.obj"
   "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/test/test_package.cpp" "C:/Users/Lenovo/Desktop/Kody/netsim-grupa-3/cmake-build-debug/CMakeFiles/netsim-grupa-3_test.dir/test/test_package.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

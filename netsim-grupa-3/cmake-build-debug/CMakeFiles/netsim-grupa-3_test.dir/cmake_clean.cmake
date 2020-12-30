@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/netsim-grupa-3_test.dir/src/package.cpp.obj"
+  "CMakeFiles/netsim-grupa-3_test.dir/src/storage_types.cpp.obj"
   "CMakeFiles/netsim-grupa-3_test.dir/test/main_gtest.cpp.obj"
+  "CMakeFiles/netsim-grupa-3_test.dir/test/test_nodes.cpp.obj"
   "CMakeFiles/netsim-grupa-3_test.dir/test/test_package.cpp.obj"
   "libnetsim-grupa-3_test.dll.a"
   "netsim-grupa-3_test.exe"

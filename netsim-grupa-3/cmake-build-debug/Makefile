@@ -86,18 +86,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -109,6 +97,18 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -174,19 +174,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named untitled1
-
-# Build rule for target.
-untitled1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 untitled1
-.PHONY : untitled1
-
-# fast build rule for target.
-untitled1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
-.PHONY : untitled1/fast
 
 #=============================================================================
 # Target rules for targets named netsim-grupa-3_debug
@@ -272,7 +259,6 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/main.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
@@ -282,7 +268,6 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/main.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.i
 .PHONY : main.cpp.i
 
@@ -292,9 +277,68 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/package.obj: src/package.cpp.obj
+
+.PHONY : src/package.obj
+
+# target to build an object file
+src/package.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/src/package.cpp.obj
+.PHONY : src/package.cpp.obj
+
+src/package.i: src/package.cpp.i
+
+.PHONY : src/package.i
+
+# target to preprocess a source file
+src/package.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/src/package.cpp.i
+.PHONY : src/package.cpp.i
+
+src/package.s: src/package.cpp.s
+
+.PHONY : src/package.s
+
+# target to generate assembly for a file
+src/package.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/src/package.cpp.s
+.PHONY : src/package.cpp.s
+
+src/storage_types.obj: src/storage_types.cpp.obj
+
+.PHONY : src/storage_types.obj
+
+# target to build an object file
+src/storage_types.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/src/storage_types.cpp.obj
+.PHONY : src/storage_types.cpp.obj
+
+src/storage_types.i: src/storage_types.cpp.i
+
+.PHONY : src/storage_types.i
+
+# target to preprocess a source file
+src/storage_types.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/src/storage_types.cpp.i
+.PHONY : src/storage_types.cpp.i
+
+src/storage_types.s: src/storage_types.cpp.s
+
+.PHONY : src/storage_types.s
+
+# target to generate assembly for a file
+src/storage_types.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_debug.dir\build.make CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/src/storage_types.cpp.s
+.PHONY : src/storage_types.cpp.s
 
 test/main_gtest.obj: test/main_gtest.cpp.obj
 
@@ -322,6 +366,33 @@ test/main_gtest.s: test/main_gtest.cpp.s
 test/main_gtest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/test/main_gtest.cpp.s
 .PHONY : test/main_gtest.cpp.s
+
+test/test_nodes.obj: test/test_nodes.cpp.obj
+
+.PHONY : test/test_nodes.obj
+
+# target to build an object file
+test/test_nodes.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/test/test_nodes.cpp.obj
+.PHONY : test/test_nodes.cpp.obj
+
+test/test_nodes.i: test/test_nodes.cpp.i
+
+.PHONY : test/test_nodes.i
+
+# target to preprocess a source file
+test/test_nodes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/test/test_nodes.cpp.i
+.PHONY : test/test_nodes.cpp.i
+
+test/test_nodes.s: test/test_nodes.cpp.s
+
+.PHONY : test/test_nodes.s
+
+# target to generate assembly for a file
+test/test_nodes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\netsim-grupa-3_test.dir\build.make CMakeFiles/netsim-grupa-3_test.dir/test/test_nodes.cpp.s
+.PHONY : test/test_nodes.cpp.s
 
 test/test_package.obj: test/test_package.cpp.obj
 
@@ -368,13 +439,21 @@ help:
 	@echo ... gtest_main
 	@echo ... netsim-grupa-3_debug
 	@echo ... netsim-grupa-3_test
-	@echo ... untitled1
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/package.obj
+	@echo ... src/package.i
+	@echo ... src/package.s
+	@echo ... src/storage_types.obj
+	@echo ... src/storage_types.i
+	@echo ... src/storage_types.s
 	@echo ... test/main_gtest.obj
 	@echo ... test/main_gtest.i
 	@echo ... test/main_gtest.s
+	@echo ... test/test_nodes.obj
+	@echo ... test/test_nodes.i
+	@echo ... test/test_nodes.s
 	@echo ... test/test_package.obj
 	@echo ... test/test_package.i
 	@echo ... test/test_package.s

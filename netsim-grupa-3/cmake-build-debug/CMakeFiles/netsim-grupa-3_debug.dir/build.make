@@ -76,10 +76,38 @@ include CMakeFiles/netsim-grupa-3_debug.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/netsim-grupa-3_debug.dir/flags.make
 
+CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.obj: CMakeFiles/netsim-grupa-3_debug.dir/flags.make
+CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.obj: CMakeFiles/netsim-grupa-3_debug.dir/includes_CXX.rsp
+CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.obj: ../src/package.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\netsim-grupa-3_debug.dir\src\package.cpp.obj -c C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\src\package.cpp
+
+CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\src\package.cpp > CMakeFiles\netsim-grupa-3_debug.dir\src\package.cpp.i
+
+CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\src\package.cpp -o CMakeFiles\netsim-grupa-3_debug.dir\src\package.cpp.s
+
+CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.obj: CMakeFiles/netsim-grupa-3_debug.dir/flags.make
+CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.obj: CMakeFiles/netsim-grupa-3_debug.dir/includes_CXX.rsp
+CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.obj: ../src/storage_types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\netsim-grupa-3_debug.dir\src\storage_types.cpp.obj -c C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\src\storage_types.cpp
+
+CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\src\storage_types.cpp > CMakeFiles\netsim-grupa-3_debug.dir\src\storage_types.cpp.i
+
+CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\src\storage_types.cpp -o CMakeFiles\netsim-grupa-3_debug.dir\src\storage_types.cpp.s
+
 CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj: CMakeFiles/netsim-grupa-3_debug.dir/flags.make
 CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj: CMakeFiles/netsim-grupa-3_debug.dir/includes_CXX.rsp
 CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\netsim-grupa-3_debug.dir\main.cpp.obj -c C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\main.cpp
 
 CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.i: cmake_force
@@ -92,17 +120,21 @@ CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.s: cmake_force
 
 # Object files for target netsim-grupa-3_debug
 netsim__grupa__3_debug_OBJECTS = \
+"CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.obj" \
+"CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.obj" \
 "CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj"
 
 # External object files for target netsim-grupa-3_debug
 netsim__grupa__3_debug_EXTERNAL_OBJECTS =
 
+netsim-grupa-3_debug.exe: CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.obj
+netsim-grupa-3_debug.exe: CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.obj
 netsim-grupa-3_debug.exe: CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj
 netsim-grupa-3_debug.exe: CMakeFiles/netsim-grupa-3_debug.dir/build.make
 netsim-grupa-3_debug.exe: CMakeFiles/netsim-grupa-3_debug.dir/linklibs.rsp
 netsim-grupa-3_debug.exe: CMakeFiles/netsim-grupa-3_debug.dir/objects1.rsp
 netsim-grupa-3_debug.exe: CMakeFiles/netsim-grupa-3_debug.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable netsim-grupa-3_debug.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Lenovo\Desktop\Kody\netsim-grupa-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable netsim-grupa-3_debug.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\netsim-grupa-3_debug.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

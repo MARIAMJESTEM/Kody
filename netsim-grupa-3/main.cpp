@@ -4,17 +4,18 @@
 
 #include <iostream>
 #include "package.hpp"
+#include "nodes.hpp"
 
 int main() {
     //test IsAssignedIDlowest
-
+    /*
     Package p1;
     Package p2;
     ElementID id1 = p1.get_id();
     ElementID id2 = p2.get_id();
     std::cout << id1 <<std::endl;
     std::cout << id2 << std::endl;
-
+*/
 
     //test na destruktor
     /*

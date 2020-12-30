@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/netsim-grupa-3_debug.dir/main.cpp.obj"
+  "CMakeFiles/netsim-grupa-3_debug.dir/src/package.cpp.obj"
+  "CMakeFiles/netsim-grupa-3_debug.dir/src/storage_types.cpp.obj"
   "libnetsim-grupa-3_debug.dll.a"
   "netsim-grupa-3_debug.exe"
   "netsim-grupa-3_debug.exe.manifest"
