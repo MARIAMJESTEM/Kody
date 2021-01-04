@@ -1,7 +1,3 @@
-//
-// Created by Lenovo on 28.12.2020.
-//
-
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
@@ -19,80 +15,76 @@ using ::std::cout;
 using ::std::endl;
 
 // -----------------
-/*
+
 TEST(WorkerTest, HasBuffer) {
-// Test scenariusza opisanego na stronie:
-// http://home.agh.edu.pl/~mdig/dokuwiki/doku.php?id=teaching:programming:soft-dev:topics:net-simulation:part_nodes#bufor_aktualnie_przetwarzanego_polproduktu
+    // Test scenariusza opisanego na stronie:
+    // http://home.agh.edu.pl/~mdig/dokuwiki/doku.php?id=teaching:programming:soft-dev:topics:net-simulation:part_nodes#bufor_aktualnie_przetwarzanego_polproduktu
 
-Worker w(1, 2, std::make_unique<PackageQueue>(PackageQueueType::FIFO));
-Time t = 1;
+    Worker w(1, 2, std::make_unique<PackageQueue>(PackageQueueType::FIFO));
+    Time t = 1;
 
-w.receive_package(Package(1));
-w.do_work(t);
-++t;
-w.receive_package(Package(2));
-w.do_work(t);
-auto& buffer = w.get_sending_buffer();
+    w.receive_package(Package(1));
+    w.do_work(t);
+    ++t;
+    w.receive_package(Package(2));
+    w.do_work(t);
+    auto& buffer = w.get_sending_buffer();
 
-ASSERT_TRUE(buffer.has_value());
-EXPECT_EQ(buffer.value().get_id(), 1);
+    ASSERT_TRUE(buffer.has_value());
+    EXPECT_EQ(buffer.value().get_id(), 1);
 }
-*/
+
 // -----------------
 
 TEST(RampTest, IsDeliveryOnTime) {
 
-Ramp r(<#initializer#>, 1, 2);
-auto recv = std::make_unique<Storehouse>(1);
+    Ramp r(1, 2);
+    auto recv = std::make_unique<Storehouse>(1);
 
-r.receiver_preferences_.add_receiver(recv.get());
+    r.receiver_preferences_.add_receiver(recv.get());
 
-r.deliver_goods(1);
-ASSERT_TRUE(r.get_sending_buffer().has_value());
-r.send_package();
+    r.deliver_goods(1);
+    ASSERT_TRUE(r.get_sending_buffer().has_value());
+    r.send_package();
 
-r.deliver_goods(2);
-ASSERT_FALSE(r.get_sending_buffer().has_value());
+    r.deliver_goods(2);
+    ASSERT_FALSE(r.get_sending_buffer().has_value());
 
-r.deliver_goods(3);
-ASSERT_TRUE(r.get_sending_buffer().has_value());
+    r.deliver_goods(3);
+    ASSERT_TRUE(r.get_sending_buffer().has_value());
 }
 
 // -----------------
 
-/*
 TEST(ReceiverPreferencesTest, AddReceiversRescalesProbability) {
-// Upewnij się, że dodanie odbiorcy spowoduje przeskalowanie prawdopodobieństw.
-ReceiverPreferences rp;
+    // Upewnij się, że dodanie odbiorcy spowoduje przeskalowanie prawdopodobieństw.
+    ReceiverPreferences rp;
 
-MockReceiver r1;
-rp.add_receiver(&r1);
-ASSERT_NE(rp.get_preferences().find(&r1), rp.get_preferences().end());
-EXPECT_EQ(rp.get_preferences().at(&r1), 1.0);
+    MockReceiver r1;
+    rp.add_receiver(&r1);
+    ASSERT_NE(rp.get_preferences().find(&r1), rp.get_preferences().end());
+    EXPECT_EQ(rp.get_preferences().at(&r1), 1.0);
 
-MockReceiver r2;
-rp.add_receiver(&r2);
-EXPECT_EQ(rp.get_preferences().at(&r1), 0.5);
-ASSERT_NE(rp.get_preferences().find(&r2), rp.get_preferences().end());
-EXPECT_EQ(rp.get_preferences().at(&r2), 0.5);
+    MockReceiver r2;
+    rp.add_receiver(&r2);
+    EXPECT_EQ(rp.get_preferences().at(&r1), 0.5);
+    ASSERT_NE(rp.get_preferences().find(&r2), rp.get_preferences().end());
+    EXPECT_EQ(rp.get_preferences().at(&r2), 0.5);
 }
-*/
 
-/*
 TEST(ReceiverPreferencesTest, RemoveReceiversRescalesProbability) {
-// Upewnij się, że usunięcie odbiorcy spowoduje przeskalowanie pozostałych prawdopodobieństw.
-ReceiverPreferences rp;
+    // Upewnij się, że usunięcie odbiorcy spowoduje przeskalowanie pozostałych prawdopodobieństw.
+    ReceiverPreferences rp;
 
-MockReceiver r1, r2;
-rp.add_receiver(&r1);
-rp.add_receiver(&r2);
+    MockReceiver r1, r2;
+    rp.add_receiver(&r1);
+    rp.add_receiver(&r2);
 
-rp.remove_receiver(&r2);
-ASSERT_EQ(rp.get_preferences().find(&r2), rp.get_preferences().end());
-EXPECT_EQ(rp.get_preferences().at(&r1), 1.0);
+    rp.remove_receiver(&r2);
+    ASSERT_EQ(rp.get_preferences().find(&r2), rp.get_preferences().end());
+    EXPECT_EQ(rp.get_preferences().at(&r1), 1.0);
 }
 
- */
 // Przydatny alias, żeby zamiast pisać `::testing::Return(...)` móc pisać
 // samo `Return(...)`.
 using ::testing::Return;
@@ -103,27 +95,26 @@ using ::testing::Return;
 class ReceiverPreferencesChoosingTest : public GlobalFunctionsFixture {
 };
 
-/*
 TEST_F(ReceiverPreferencesChoosingTest, ChooseReceiver) {
-// Upewnij się, że odbiorcy wybierani są z właściwym prawdopodobieństwem.
+    // Upewnij się, że odbiorcy wybierani są z właściwym prawdopodobieństwem.
 
-EXPECT_CALL(global_functions_mock, generate_canonical()).WillOnce(Return(0.3)).WillOnce(Return(0.7));
+    EXPECT_CALL(global_functions_mock, generate_canonical()).WillOnce(Return(0.3)).WillOnce(Return(0.7));
 
-ReceiverPreferences rp;
+    ReceiverPreferences rp;
 
-MockReceiver r1, r2;
-rp.add_receiver(&r1);
-rp.add_receiver(&r2);
+    MockReceiver r1, r2;
+    rp.add_receiver(&r1);
+    rp.add_receiver(&r2);
 
-if (rp.begin()->first == &r1) {
-EXPECT_EQ(rp.choose_receiver(), &r1);
-EXPECT_EQ(rp.choose_receiver(), &r2);
-} else {
-EXPECT_EQ(rp.choose_receiver(), &r2);
-EXPECT_EQ(rp.choose_receiver(), &r1);
+    if (rp.begin()->first == &r1) {
+        EXPECT_EQ(rp.choose_receiver(), &r1);
+        EXPECT_EQ(rp.choose_receiver(), &r2);
+    } else {
+        EXPECT_EQ(rp.choose_receiver(), &r2);
+        EXPECT_EQ(rp.choose_receiver(), &r1);
+    }
 }
-}
-*/
+
 // -----------------
 
 using ::testing::Return;
@@ -151,20 +142,20 @@ public:
 
 
 TEST(PackageSenderTest, SendPackage) {
-MockReceiver mock_receiver;
-// Oczekujemy, że metoda `receive_package()` obiektu `mock_receiver` zostanie
-// wywołana dwukrotnie, z dowolnym argumentem (symbol `_`).
-EXPECT_CALL(mock_receiver, receive_package(_)).Times(1);
+    MockReceiver mock_receiver;
+    // Oczekujemy, że metoda `receive_package()` obiektu `mock_receiver` zostanie
+    // wywołana dwukrotnie, z dowolnym argumentem (symbol `_`).
+    EXPECT_CALL(mock_receiver, receive_package(_)).Times(1);
 
-PackageSenderFixture sender;
-sender.receiver_preferences_.add_receiver(&mock_receiver);
-// Zwróć uwagę, że poniższa instrukcja korzysta z semantyki referencji do r-wartości.
-sender.push_package(Package());
-EXPECT_TRUE(sender.get_sending_buffer());
-sender.send_package();
+    PackageSenderFixture sender;
+    sender.receiver_preferences_.add_receiver(&mock_receiver);
+    // Zwróć uwagę, że poniższa instrukcja korzysta z semantyki referencji do r-wartości.
+    sender.push_package(Package());
 
-EXPECT_FALSE(sender.get_sending_buffer());
+    sender.send_package();
 
-// Upewnij się, że proces wysyłania zachodzi tylko wówczas, gdy w bufor jest pełny.
-sender.send_package();
+    EXPECT_FALSE(sender.get_sending_buffer());
+
+    // Upewnij się, że proces wysyłania zachodzi tylko wówczas, gdy w bufor jest pełny.
+    sender.send_package();
 }

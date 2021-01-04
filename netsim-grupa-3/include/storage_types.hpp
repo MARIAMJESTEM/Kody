@@ -12,7 +12,7 @@
 #include "package.hpp"
 
 
-enum PackageQueueType{
+enum class PackageQueueType{
     FIFO,
     LIFO
 };
@@ -23,7 +23,6 @@ using cost_list_of_products = std::list<Package>;
 
 class IPackageStockpile{
 public:
-    cost_list_of_products lst_;
     using const_iterator = std::list<Package>::const_iterator;
 
     const_iterator begin() const {return lst_.begin();};
@@ -36,7 +35,8 @@ public:
     virtual std::size_t size() = 0;
 
     ~IPackageStockpile() = default;
-
+protected:
+    std::list<Package> lst_;
 };
 
 class IPackageQueue: public IPackageStockpile{

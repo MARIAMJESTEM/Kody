@@ -13,13 +13,13 @@
 class Package{
 public:
     Package();
-    explicit Package(ElementID id): _id(id){assigned_IDs.insert(_id);}
+    Package(const Package&) = default;
+    explicit Package(ElementID id);
     ElementID get_id() const {return _id;}
-    Package(Package &&other);
-    //Package(Package& other)= default;
+    Package(Package &&other) noexcept ;
     Package &operator = (Package &&other);
     ~Package();
-private:
+//private:
     ElementID _id;
     static std::set<ElementID> assigned_IDs;
     static std::set<ElementID> freed_IDs;
